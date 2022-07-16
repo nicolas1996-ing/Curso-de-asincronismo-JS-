@@ -6,11 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "callback": "node ./src/callback/index.js",
+    "callback2": "node ./src2/callback/index.js",
     "callback:challenge": "node ./src/callback/challenge.js",
+    "callback2:challenge": "node ./src2/callback/challenge.js",
     "promise": "node ./src/promise/fetch.js",
+    "promise2": "node ./src2/promise/index.js",
     "promise:challenge": "node ./src/promise/challenge.js",
+    "promise:challenge2": "node ./src2/promise/challenge.js",
     "async": "node ./src/async/index.js",
-    "async:challenge": "node ./src/async/challenge.js"
+    "async2": "node ./src2/async/index.js",
+    "async:challenge": "node ./src/async/challenge.js",
+    "async2:challenge": "node ./src2/async/challenge.js",
+    "generator": "node ./src2/generator/index.js",
+    "generator:challenge": "node ./src2/generator/challenge.js",
+    "project": "node ./srcProject/assets/main1-fetch.js"
   },
   "keywords": [
     "callbacks",
@@ -20,7 +29,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
     "fetch": "^1.1.0",
+    "node-fetch": "^3.2.7",
     "xmlhttprequest": "^1.8.0"
-  }
+  },
+  "type": "module"
 }
