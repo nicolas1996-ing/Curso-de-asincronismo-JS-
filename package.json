@@ -4,6 +4,7 @@
   "description": "trabajar con asincronimos en JavaScript",
   "main": "src/index.js",
   "scripts": {
+    "deploy": "gh-pages -d srcProject",
     "test": "echo \"Error: no test specified\" && exit 1",
     "callback": "node ./src/callback/index.js",
     "callback2": "node ./src2/callback/index.js",
@@ -35,5 +36,8 @@
     "node-fetch": "^3.2.7",
     "xmlhttprequest": "^1.8.0"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
